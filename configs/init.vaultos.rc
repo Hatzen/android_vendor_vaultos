@@ -1,0 +1,14 @@
+#
+# SPDX-FileCopyrightText: 2026 VaultOs
+# SPDX-License-Identifier: Apache-2.0
+#
+
+service copy_assets /vendor/bin/sh /vendor/bin/copy_assets.sh
+    class late_start
+    user root
+    group root media_rw
+    oneshot
+    disabled
+
+on property:sys.boot_completed=1
+    start copy_assets

@@ -18,11 +18,12 @@ PRODUCT_PACKAGES += \
     SystemUIResVaultOs \
     SettingsProviderResVaultOs
 
-# Security Configurations & Component Overrides
+# Security Configurations, Init Services & Component Overrides
 PRODUCT_COPY_FILES += \
     vendor/vaultos/configs/component-override.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/component-override.xml \
     vendor/vaultos/configs/privapp-permissions-vaultos.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-vaultos.xml \
     vendor/vaultos/configs/default-permissions-kiwix.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-kiwix.xml \
+    vendor/vaultos/configs/init.vaultos.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.vaultos.rc \
     vendor/vaultos/configs/copy_assets.sh:$(TARGET_COPY_OUT_VENDOR)/bin/copy_assets.sh \
     vendor/vaultos/prebuilts/anonymousplanet.org_en_all_2026-05.zim:$(TARGET_COPY_OUT_PRODUCT)/media/kiwix/anonymousplanet.org_en_all_2026-05.zim
 
