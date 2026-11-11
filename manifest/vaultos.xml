@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    SPDX-FileCopyrightText: 2026 VaultOs
+    SPDX-License-Identifier: Apache-2.0
+
+    VaultOs Local Manifest for LineageOS 23.2 / Android 15
+    Place this file into: .repo/local_manifests/vaultos.xml
+-->
+<manifest>
+  <remote name="hatzen" fetch="https://github.com/Hatzen" />
+  <remote name="themuppets" fetch="https://github.com/TheMuppets" />
+
+  <!-- 1. SHIFTphone 8 Device Tree -->
+  <project name="VaultOs" path="device/shift/otter" remote="hatzen" revision="lineage-23.2" />
+
+  <!-- 2. Air-Gapped Kernel with KernelSU-Next & Disabled USB Data (PR #2 branch) -->
+  <remove-project name="LineageOS/android_kernel_shift_qcm6490" />
+  <project name="android_kernel_shift_qcm6490" path="kernel/shift/qcm6490" remote="hatzen" revision="Feature/kernelsu-next-manually" />
+
+  <!-- 3. Offline SetupWizard (Bypasses WiFi/SIM setup pages) -->
+  <remove-project name="LineageOS/android_packages_apps_SetupWizard" />
+  <project name="android_packages_apps_SetupWizard" path="packages/apps/SetupWizard" remote="hatzen" revision="lineage-23.2" />
+
+  <!-- 4. Proprietary Vendor Blobs (TheMuppets) -->
+  <project name="proprietary_vendor_shift_otter" path="vendor/shift/otter" remote="themuppets" revision="lineage-23.2" />
+
+  <!-- 5. VaultOs ROM Vendor Layer (Overlays, Prebuilts, Branding) -->
+  <project name="android_vendor_vaultos" path="vendor/vaultos" remote="hatzen" revision="main" />
+</manifest>

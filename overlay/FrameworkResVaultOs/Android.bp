@@ -1,0 +1,12 @@
+//
+// SPDX-FileCopyrightText: 2026 VaultOs
+// SPDX-License-Identifier: Apache-2.0
+//
+
+runtime_resource_overlay {
+    name: "FrameworkResVaultOs",
+    theme: "FrameworkResVaultOs",
+    product_specific: true,
+    sdk_version: "current",
+    resource_dirs: ["res"],
+}

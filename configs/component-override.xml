@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: 2026 VaultOs
+    SPDX-License-Identifier: Apache-2.0
+-->
+<bindings>
+    <!-- Deactivates complete WiFi subsystem at APEX/package level -->
+    <apex-component-override package="com.android.wifi" enabled="false" />
+    
+    <!-- Deactivates cellular and telephony services completely -->
+    <apex-component-override package="com.android.telephony" enabled="false" />
+</bindings>

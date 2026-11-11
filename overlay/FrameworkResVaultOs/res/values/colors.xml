@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: 2026 VaultOs
+    SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <color name="accent_device_default_light">#FF538E5C</color>
+    <color name="accent_device_default_dark">#FF235C5C</color>
+
+    <!-- System background colors: Pure black for dark mode -->
+    <color name="background_device_default_dark">#FF000000</color>
+    <color name="background_device_default_light">#FFFFFFFF</color>
+
+    <!-- Material You palette overrides (A1 = Primary, Neutral = Background) -->
+    <color name="system_accent1_500">#FF03DAC5</color>
+    <color name="system_accent1_600">#FF018786</color>
+    <color name="system_accent1_200">#FF83ACAC</color>
+
+    <color name="system_neutral1_900">#FF000000</color>
+    <color name="system_neutral1_50">#FFFFFFFF</color>
+</resources>

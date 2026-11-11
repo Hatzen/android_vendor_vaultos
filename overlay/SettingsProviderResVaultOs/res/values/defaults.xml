@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: 2026 VaultOs
+    SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Automatically enable CustomOtterControl ShiftKeyService on first boot -->
+    <string name="def_accessibility_services" translatable="false">
+        de.hartz.software.customottercontrol/de.hartz.software.customottercontrol.ShiftKeyService
+    </string>
+    <integer name="def_accessibility_enabled">1</integer>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: 2026 VaultOs
+    SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Hard disable VoLTE and Video Telephony -->
+    <bool name="config_carrier_volte_available">false</bool>
+    <bool name="config_device_volte_available">false</bool>
+    <bool name="config_device_vt_available">false</bool>
+
+    <!-- Disable Auto Selection Network UI -->
+    <bool name="config_enableNewAutoSelectNetworkUI">false</bool>
+
+    <!-- Disable WiFi display -->
+    <bool name="config_enableWifiDisplay">false</bool>
+
+    <!-- Set default peak refresh rate to 60 to conserve battery -->
+    <integer name="config_defaultPeakRefreshRate">60</integer>
+
+    <!-- Disable Always on Display by default -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">false</bool>
+
+    <!-- Disable Double Tap to Wake -->
+    <bool name="config_supportDoubleTapWake">false</bool>
+</resources>
