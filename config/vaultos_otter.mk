@@ -26,6 +26,10 @@ PRODUCT_MODEL := SHIFTphone 8
 PRODUCT_MANUFACTURER := SHIFT
 PRODUCT_GMS_CLIENTID_BASE := android-uniscope
 
+# Ensure Lineage build flags & features are activated for otter
+export LINEAGE_BUILD := otter
+
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=SHIFT/otter/otter:14/SOS.6.7.20260712/20260712:user/release-keys \
     DeviceProduct=otter
