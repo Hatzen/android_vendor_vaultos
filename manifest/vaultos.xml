@@ -27,3 +27,4 @@
   <!-- 5. VaultOs ROM Vendor Layer (Overlays, Prebuilts, Branding) -->
   <project name="android_vendor_vaultos" path="vendor/vaultos" remote="hatzen" revision="main" />
 </manifest>
+

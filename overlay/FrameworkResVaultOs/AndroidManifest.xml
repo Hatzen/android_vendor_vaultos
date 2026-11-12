@@ -13,3 +13,4 @@
         android:isStatic="true"
         android:priority="900" />
 </manifest>
+

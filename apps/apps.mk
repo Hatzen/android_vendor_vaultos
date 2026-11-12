@@ -24,3 +24,4 @@ PRODUCT_PACKAGES += \
     Terminal \
     VLC \
     Wiki
+

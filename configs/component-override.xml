@@ -10,3 +10,4 @@
     <!-- Deactivates cellular and telephony services completely -->
     <apex-component-override package="com.android.telephony" enabled="false" />
 </bindings>
+

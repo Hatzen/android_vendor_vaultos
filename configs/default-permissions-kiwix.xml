@@ -10,3 +10,4 @@
         <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false" />
     </exception>
 </exceptions>
+

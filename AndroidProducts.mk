@@ -10,3 +10,4 @@ COMMON_LUNCH_CHOICES := \
     vaultos_otter-user \
     vaultos_otter-userdebug \
     vaultos_otter-eng
+

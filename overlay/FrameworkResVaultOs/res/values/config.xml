@@ -24,3 +24,4 @@
     <!-- Disable Double Tap to Wake -->
     <bool name="config_supportDoubleTapWake">false</bool>
 </resources>
+

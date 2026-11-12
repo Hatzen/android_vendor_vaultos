@@ -29,3 +29,9 @@ PRODUCT_COPY_FILES += \
 
 # Bundled Offline Apps & Tools
 include vendor/vaultos/apps/apps.mk
+
+# Soong Namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom-caf/wlan \
+    hardware/qcom-caf/wlan/qcwcn
+
