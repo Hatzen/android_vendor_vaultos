@@ -15,7 +15,7 @@
 
   <!-- 2. Air-Gapped Kernel with KernelSU-Next & Disabled USB Data (PR #2 branch) -->
   <remove-project name="LineageOS/android_kernel_shift_qcm6490" />
-  <project name="android_kernel_shift_qcm6490" path="kernel/shift/qcm6490" remote="hatzen" revision="Feature/kernelsu-next-manually" />
+  <project name="android_kernel_shift_qcm6490" path="kernel/shift/qcm6490" remote="hatzen" revision="Feature/kernelsu-next-manually" submodules="true" />
 
   <!-- 3. Offline SetupWizard (Bypasses WiFi/SIM setup pages) -->
   <remove-project name="LineageOS/android_packages_apps_SetupWizard" />
