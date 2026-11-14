@@ -11,7 +11,6 @@ PRODUCT_PACKAGES += \
     CustomOtterControl \
     FancyLauncher \
     Files \
-    Insular \
     Kernel \
     KernelSU \
     LinuxWiki \

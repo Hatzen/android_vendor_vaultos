@@ -85,6 +85,11 @@ android_app_import {
     ],
 }
 
+// Note: Insular / Island defines an activity with ACTION_INSTALL_PACKAGE.
+// When placed in /product (system partition), PackageManagerService asserts exactly one system installer
+// and crashes on boot with 'There must be exactly one installer; found [PackageInstaller, Insular]'.
+// Insular must be installed as a standard user application on /data.
+/*
 android_app_import {
     name: "Insular",
     apk: "Insular/com.oasisfeng.island.fdroid_51801.apk",
@@ -95,6 +100,7 @@ android_app_import {
         enabled: false,
     },
 }
+*/
 
 android_app_import {
     name: "Kernel",
