@@ -124,3 +124,4 @@ The `CustomOtterControl` app inside VaultOs serves as the device's sovereign sec
 2. **In-OS Updater Integration**:
    - Queries the OTA JSON endpoint over HTTPS (or Tor onion mirror).
    - Verifies the cryptographic signature of incremental or full updates before passing to Android's `UpdateEngine`.
+
