@@ -11,7 +11,7 @@
   <remote name="themuppets" fetch="https://github.com/TheMuppets" />
 
   <!-- 1. SHIFTphone 8 Device Tree -->
-  <project name="VaultOs" path="device/shift/otter" remote="hatzen" revision="lineage-23.2" />
+  <project name="android_device_shift_otter" path="device/shift/otter" remote="hatzen" revision="lineage-23.2" />
 
   <!-- 2. Air-Gapped Kernel with KernelSU-Next & Disabled USB Data (PR #2 branch) -->
   <remove-project name="LineageOS/android_kernel_shift_qcm6490" />
