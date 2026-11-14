@@ -10,6 +10,31 @@ service copy_assets /vendor/bin/sh /vendor/bin/copy_assets.sh
     oneshot
     disabled
 
+on boot
+    # VaultOs Air-Gap & Battery Optimization: stop radio/wifi daemons for disabled hardware
+    stop vendor.qcrild
+    stop vendor.qcrild2
+    stop cnss-daemon
+    stop vendor.lowi
+    stop lowirpcd
+    stop wificond
+    stop vendor.wifi_hal_legacy
+    stop loc_launcher
+    stop vendor.ssgqmigd
+    stop vendor.mlid
+    stop ipacm
+
 on property:sys.boot_completed=1
     start copy_assets
+    stop vendor.qcrild
+    stop vendor.qcrild2
+    stop cnss-daemon
+    stop vendor.lowi
+    stop lowirpcd
+    stop wificond
+    stop vendor.wifi_hal_legacy
+    stop loc_launcher
+    stop vendor.ssgqmigd
+    stop vendor.mlid
+    stop ipacm
 

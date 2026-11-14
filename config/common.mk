@@ -9,8 +9,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.vaultos.airgap=true \
     ro.setupwizard.ignore_sim_locale=true
 
-# Native Bootanimation
-TARGET_BOOTANIMATION_ZIP := vendor/vaultos/media/bootanimation.zip
+# Default Bootanimation is set in device/shift/otter/BoardConfig.mk via TARGET_BOOTANIMATION
 
 # Runtime Resource Overlays (RRO)
 PRODUCT_PACKAGES += \
@@ -22,6 +21,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/vaultos/configs/component-override.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/component-override.xml \
     vendor/vaultos/configs/privapp-permissions-vaultos.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-vaultos.xml \
+    vendor/vaultos/configs/default-permissions-vaultos.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-vaultos.xml \
     vendor/vaultos/configs/default-permissions-kiwix.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-kiwix.xml \
     vendor/vaultos/configs/init.vaultos.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.vaultos.rc \
     vendor/vaultos/configs/copy_assets.sh:$(TARGET_COPY_OUT_VENDOR)/bin/copy_assets.sh \
