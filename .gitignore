@@ -3,3 +3,8 @@
 .DS_Store
 Thumbs.db
 
+# Private signing keys (never commit to public git)
+security/*.pem
+security/*.key
+security/*.pk8
+
