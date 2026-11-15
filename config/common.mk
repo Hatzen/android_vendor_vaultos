@@ -14,6 +14,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Runtime Resource Overlays (RRO)
 PRODUCT_PACKAGES += \
     FrameworkResVaultOs \
+    Launcher3ResVaultOs \
     SystemUIResVaultOs \
     SettingsProviderResVaultOs
 

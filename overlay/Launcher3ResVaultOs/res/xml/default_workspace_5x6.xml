@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: 2026 VaultOs
+    SPDX-License-Identifier: Apache-2.0
+-->
+<favorites>
+
+    <!-- Hotseat -->
+    <resolve
+        container="-101"
+        screen="0"
+        x="0"
+        y="0">
+        <favorite uri="#Intent;action=android.intent.action.DIAL;end" />
+        <favorite uri="tel:123" />
+        <favorite uri="#Intent;action=android.intent.action.CALL_BUTTON;end" />
+    </resolve>
+
+    <resolve
+        container="-101"
+        screen="1"
+        x="1"
+        y="0">
+        <favorite uri="#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_MESSAGING;end" />
+        <favorite uri="sms:" />
+        <favorite uri="smsto:" />
+        <favorite uri="mms:" />
+        <favorite uri="mmsto:" />
+    </resolve>
+
+    <resolve
+        container="-101"
+        screen="2"
+        x="2"
+        y="0">
+        <favorite uri="#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_CONTACTS;end" />
+    </resolve>
+
+    <resolve
+        container="-101"
+        screen="3"
+        x="3"
+        y="0">
+        <favorite uri="#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_BROWSER;end" />
+    </resolve>
+
+    <resolve
+        container="-101"
+        screen="4"
+        x="4"
+        y="0">
+        <favorite uri="#Intent;action=android.media.action.STILL_IMAGE_CAMERA;end" />
+        <favorite uri="#Intent;action=android.intent.action.CAMERA_BUTTON;end" />
+    </resolve>
+
+    <!-- Screen 0 -->
+    <appwidget
+        packageName="com.android.deskclock"
+        className="com.android.alarmclock.DigitalAppWidgetProvider"
+        screen="0"
+        x="0"
+        y="0"
+        spanX="5"
+        spanY="1" />
+
+    <favorite
+        packageName="de.hartz.software.customottercontrol"
+        className="de.hartz.software.customottercontrol.MainActivity"
+        screen="0"
+        x="0"
+        y="5" />
+
+    <favorite
+        packageName="org.briarproject.briar.android"
+        className="org.briarproject.briar.android.splash.SplashScreenActivity"
+        screen="0"
+        x="1"
+        y="5" />
+
+    <favorite
+        packageName="de.hartz.software.parannoying"
+        className="de.hartz.software.parannoying.core.activities.insecured.SplashActivity"
+        screen="0"
+        x="2"
+        y="5" />
+
+    <favorite
+        packageName="com.collabora.libreoffice.snapshot"
+        className="org.libreoffice.androidapp.ui.LibreOfficeUIActivity"
+        screen="0"
+        x="3"
+        y="5" />
+
+    <favorite
+        packageName="com.android.settings"
+        className="com.android.settings.Settings"
+        screen="0"
+        x="4"
+        y="5" />
+
+    <!-- Screen 1 -->
+    <favorite
+        packageName="org.kiwix.kiwixmobile.standalone"
+        className="org.kiwix.kiwixmobile.main.KiwixMainActivity"
+        screen="1"
+        x="0"
+        y="-1" />
+
+    <favorite
+        packageName="com.mixplorer"
+        className="com.mixplorer.activities.BrowseActivity"
+        screen="1"
+        x="1"
+        y="-1" />
+
+    <resolve
+        screen="1"
+        x="2"
+        y="-1">
+        <favorite uri="#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_GALLERY;end" />
+        <favorite uri="#Intent;type=images/*;end" />
+    </resolve>
+
+    <favorite
+        packageName="com.termux"
+        className="com.termux.app.TermuxActivity"
+        screen="1"
+        x="3"
+        y="-1" />
+
+</favorites>
