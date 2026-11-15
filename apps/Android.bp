@@ -121,6 +121,8 @@ android_app_import {
     name: "KernelSU",
     apk: "KernelSu/KernelSU_Next_v3.3.0_33214-release.apk",
     presigned: true,
+    preprocessed: true,
+    skip_preprocessed_apk_checks: true,
     product_specific: true,
     dex_preopt: {
         enabled: false,
