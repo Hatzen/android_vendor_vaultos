@@ -38,3 +38,8 @@ on property:sys.boot_completed=1
     stop vendor.mlid
     stop ipacm
 
+    # Concept 004: Conservative QCM6490 schedutil hysteresis for battery savings
+    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us 10000
+    write /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us 10000
+    write /sys/devices/system/cpu/cpufreq/policy7/schedutil/down_rate_limit_us 5000
+

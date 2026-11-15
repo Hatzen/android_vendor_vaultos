@@ -57,6 +57,8 @@ android_app_import {
     ],
 }
 
+// Note: FancyLauncher (KISS) is deactivated in favor of stock Launcher3 / Concept 010 monochrome launcher.
+/*
 android_app_import {
     name: "FancyLauncher",
     apk: "FancyLauncher/fr.neamar.kiss_224.apk",
@@ -71,6 +73,7 @@ android_app_import {
         "androidx.window.sidecar",
     ],
 }
+*/
 
 android_app_import {
     name: "Files",

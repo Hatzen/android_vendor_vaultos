@@ -7,12 +7,12 @@
 WITH_KSU ?= true
 
 # VaultOs Bundled Offline Applications & System Services
+# Note: FancyLauncher (KISS) is deactivated in favor of stock Launcher3 / Concept 010 monochrome launcher.
 PRODUCT_PACKAGES += \
     Alibi \
     Backup \
     Briar \
     CustomOtterControl \
-    FancyLauncher \
     Files \
     LinuxWiki \
     LLM \

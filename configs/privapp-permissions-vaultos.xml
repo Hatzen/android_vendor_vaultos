@@ -12,6 +12,11 @@
         <permission name="android.permission.ACCESS_COARSE_LOCATION" />
         <permission name="android.permission.READ_PHONE_STATE" />
         <permission name="android.permission.RECEIVE_BOOT_COMPLETED" />
+        <permission name="android.permission.INSTALL_PACKAGES" />
+        <permission name="android.permission.DELETE_PACKAGES" />
+        <permission name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+        <permission name="android.permission.MODIFY_AUDIO_SETTINGS" />
+        <permission name="android.permission.ACCESS_NOTIFICATION_POLICY" />
     </privapp-permissions>
 </permissions>
 

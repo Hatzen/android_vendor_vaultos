@@ -9,5 +9,8 @@
         de.hartz.software.customottercontrol/de.hartz.software.customottercontrol.ShiftKeyService
     </string>
     <integer name="def_accessibility_enabled">1</integer>
+
+    <!-- Concept 006: Enable native Android 16 One-Handed Mode by default -->
+    <integer name="def_one_handed_mode_enabled">1</integer>
 </resources>
 

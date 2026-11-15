@@ -31,3 +31,13 @@ if [ ! -f "$DEST_DIR/$ZIM_FILE" ]; then
     chown -R 1023:1023 "$DEST_DIR" # 1023 = media_rw
     chmod 0664 "$DEST_DIR/$ZIM_FILE"
 fi
+
+# Create standard Neo Backup & SD/Internal VaultOs bundle directories
+for VAULT_DIR in "/data/media/0/VaultOs/Backups" "/data/media/0/vaultos"; do
+    if [ ! -d "$VAULT_DIR" ]; then
+        mkdir -p "$VAULT_DIR"
+        chown -R 1023:1023 "/data/media/0/VaultOs" 2>/dev/null || true
+        chown -R 1023:1023 "$VAULT_DIR" 2>/dev/null || true
+        chmod 0771 "$VAULT_DIR"
+    fi
+done
