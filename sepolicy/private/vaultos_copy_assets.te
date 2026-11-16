@@ -1,0 +1,18 @@
+type vaultos_copy_assets, domain, coredomain;
+type vaultos_copy_assets_exec, system_file_type, exec_type, file_type;
+
+init_daemon_domain(vaultos_copy_assets)
+
+# Script runs via #!/system/bin/sh and uses toybox utilities (mkdir, cp, mv, rm, chmod, ionice, sleep).
+allow vaultos_copy_assets shell_exec:file rx_file_perms;
+allow vaultos_copy_assets toolbox_exec:file rx_file_perms;
+
+# Read bundled assets from /product/media/kiwix.
+allow vaultos_copy_assets system_file:dir r_dir_perms;
+allow vaultos_copy_assets system_file:file r_file_perms;
+
+# Create and populate Kiwix/VaultOs directories under /data/media/0 as media_rw.
+allow vaultos_copy_assets media_userdir_file:dir search;
+allow vaultos_copy_assets media_rw_data_file:dir create_dir_perms;
+allow vaultos_copy_assets media_rw_data_file:file create_file_perms;
+

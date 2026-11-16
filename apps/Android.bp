@@ -120,6 +120,129 @@ android_app_import {
     ],
 }
 
+genrule {
+    name: "kernelsu_bin_libadbroot",
+    srcs: ["KernelSu/KernelSU_Next_v3.3.0_33214-release.apk"],
+    out: ["libadbroot.so"],
+    cmd: "unzip -p $(in) lib/arm64-v8a/libadbroot.so > $(out)",
+}
+
+genrule {
+    name: "kernelsu_bin_libandroidx_graphics_path",
+    srcs: ["KernelSu/KernelSU_Next_v3.3.0_33214-release.apk"],
+    out: ["libandroidx.graphics.path.so"],
+    cmd: "unzip -p $(in) lib/arm64-v8a/libandroidx.graphics.path.so > $(out)",
+}
+
+genrule {
+    name: "kernelsu_bin_libkernelsu",
+    srcs: ["KernelSu/KernelSU_Next_v3.3.0_33214-release.apk"],
+    out: ["libkernelsu.so"],
+    cmd: "unzip -p $(in) lib/arm64-v8a/libkernelsu.so > $(out)",
+}
+
+genrule {
+    name: "kernelsu_bin_libksud",
+    srcs: ["KernelSu/KernelSU_Next_v3.3.0_33214-release.apk"],
+    out: ["libksud.so"],
+    cmd: "unzip -p $(in) lib/arm64-v8a/libksud.so > $(out)",
+}
+
+cc_prebuilt_library_shared {
+    name: "kernelsu_libadbroot",
+    stem: "libadbroot",
+    product_specific: true,
+    relative_install_path: "kernelsu",
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    target: {
+        android_arm64: {
+            srcs: [":kernelsu_bin_libadbroot"],
+        },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "kernelsu_libandroidx_graphics_path",
+    stem: "libandroidx.graphics.path",
+    product_specific: true,
+    relative_install_path: "kernelsu",
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    target: {
+        android_arm64: {
+            srcs: [":kernelsu_bin_libandroidx_graphics_path"],
+        },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "kernelsu_libkernelsu",
+    stem: "libkernelsu",
+    product_specific: true,
+    relative_install_path: "kernelsu",
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    target: {
+        android_arm64: {
+            srcs: [":kernelsu_bin_libkernelsu"],
+        },
+    },
+}
+
+cc_prebuilt_binary {
+    name: "kernelsu_libksud",
+    stem: "libksud.so",
+    product_specific: true,
+    relative_install_path: "kernelsu",
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    target: {
+        android_arm64: {
+            srcs: [":kernelsu_bin_libksud"],
+        },
+    },
+}
+
+install_symlink {
+    name: "kernelsu_libadbroot_symlink",
+    product_specific: true,
+    installed_location: "app/KernelSU/lib/arm64/libadbroot.so",
+    symlink_target: "/product/lib64/kernelsu/libadbroot.so",
+}
+
+install_symlink {
+    name: "kernelsu_libandroidx_graphics_path_symlink",
+    product_specific: true,
+    installed_location: "app/KernelSU/lib/arm64/libandroidx.graphics.path.so",
+    symlink_target: "/product/lib64/kernelsu/libandroidx.graphics.path.so",
+}
+
+install_symlink {
+    name: "kernelsu_libkernelsu_symlink",
+    product_specific: true,
+    installed_location: "app/KernelSU/lib/arm64/libkernelsu.so",
+    symlink_target: "/product/lib64/kernelsu/libkernelsu.so",
+}
+
+install_symlink {
+    name: "kernelsu_libksud_symlink",
+    product_specific: true,
+    installed_location: "app/KernelSU/lib/arm64/libksud.so",
+    symlink_target: "/product/bin/kernelsu/libksud.so",
+}
+
 android_app_import {
     name: "KernelSU",
     apk: "KernelSu/KernelSU_Next_v3.3.0_33214-release.apk",
@@ -133,6 +256,16 @@ android_app_import {
     optional_uses_libs: [
         "androidx.window.extensions",
         "androidx.window.sidecar",
+    ],
+    required: [
+        "kernelsu_libadbroot",
+        "kernelsu_libandroidx_graphics_path",
+        "kernelsu_libkernelsu",
+        "kernelsu_libksud",
+        "kernelsu_libadbroot_symlink",
+        "kernelsu_libandroidx_graphics_path_symlink",
+        "kernelsu_libkernelsu_symlink",
+        "kernelsu_libksud_symlink",
     ],
 }
 

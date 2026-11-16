@@ -25,7 +25,7 @@ PRODUCT_COPY_FILES += \
     vendor/vaultos/configs/default-permissions-vaultos.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-vaultos.xml \
     vendor/vaultos/configs/default-permissions-kiwix.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-kiwix.xml \
     vendor/vaultos/configs/init.vaultos.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.vaultos.rc \
-    vendor/vaultos/configs/copy_assets.sh:$(TARGET_COPY_OUT_VENDOR)/bin/copy_assets.sh \
+    vendor/vaultos/configs/copy_assets.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/copy_assets.sh \
     vendor/vaultos/prebuilts/anonymousplanet.org_en_all_2026-05.zim:$(TARGET_COPY_OUT_PRODUCT)/media/kiwix/anonymousplanet.org_en_all_2026-05.zim
 
 # Bundled Offline Apps & Tools

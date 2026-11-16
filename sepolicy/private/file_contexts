@@ -1,0 +1,2 @@
+/(product|system/product)/bin/copy_assets\.sh          u:object_r:vaultos_copy_assets_exec:s0
+

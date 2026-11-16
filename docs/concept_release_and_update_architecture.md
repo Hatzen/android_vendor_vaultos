@@ -48,6 +48,7 @@ avbtool extract_public_key --key avb.pem --output avb_pk.bin
 ### Phase 1: GitHub Releases (Immediate Launch)
 - **Platform**: `Hatzen/VaultOs` GitHub Releases.
 - **Limit**: Max 2 GB per file (our bacon OTA zip is ~1.8 GB).
+- **Mandatory Pre-Release Hardware Test Gate**: No build may be published or tagged as a GitHub release without first passing physical verification on a **SHIFTphone 8 (`otter`)** (clean boot, `KernelSU-Next` manager & `su` grant, `copy_assets` provisioning, `CustomOtterControl` checks, and final `WITH_USB_DEBUG=false` air-gap confirmation).
 - **Security**: Direct HTTPS distribution backed by GitHub's enterprise CDN, with SHA-256 and Ed25519 signature files attached to each tag.
 
 ### Phase 2: Dedicated Sovereign Server (Production & OTA)
