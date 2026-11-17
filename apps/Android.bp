@@ -43,6 +43,16 @@ android_app_import {
 }
 
 android_app_import {
+    name: "eSpeak",
+    apk: "eSpeak/com.reecedunn.espeak_22-vaultos.apk",
+    certificate: "platform",
+    product_specific: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+android_app_import {
     name: "CustomOtterControl",
     apk: "CustomOtterControl/app-release.apk",
     certificate: "platform",

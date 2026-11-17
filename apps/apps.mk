@@ -13,6 +13,7 @@ PRODUCT_PACKAGES += \
     Backup \
     Briar \
     CustomOtterControl \
+    eSpeak \
     Files \
     LinuxWiki \
     LLM \
