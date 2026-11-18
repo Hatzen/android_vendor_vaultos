@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: 2026 VaultOs
+    SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="location_settings_summary_location_off">Hardware deaktiviert (Air-Gap — kein internes GPS)</string>
+    <string name="location_settings_footer_location_off_no_telephony">Die interne GPS-/GNSS-Hardware ist in VaultOs zusammen mit dem Mobilfunkmodem dauerhaft deaktiviert (Air-Gap). Standortdienste können nicht aktiviert werden.</string>
+    <string name="location_settings_footer_general">Für Live-Positionsbestimmung in Offline-Karten wäre ein externer Bluetooth-GNSS-Empfänger über Simulierte Standorte erforderlich.</string>
+</resources>

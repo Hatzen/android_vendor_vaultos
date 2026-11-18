@@ -17,9 +17,13 @@
   <remove-project name="LineageOS/android_kernel_shift_qcm6490" />
   <project name="android_kernel_shift_qcm6490" path="kernel/shift/qcm6490" remote="hatzen" revision="feature/kernelsu-next-manually" submodules="true" />
 
-  <!-- 2b. Frameworks Base (Concept 006 Stage B OLED One-Handed Viewport & Cutout Guard) -->
+  <!-- 2b. Frameworks Base (Concept 006 Stage B OLED One-Handed Viewport & Cutout Guard + GPS Tile Hide) -->
   <remove-project name="LineageOS/android_frameworks_base" />
   <project name="android_frameworks_base" path="frameworks/base" remote="hatzen" revision="lineage-23.2" />
+
+  <!-- 2c. Settings (ADR 006: Lock Location UI OFF with Air-Gap explanation) -->
+  <remove-project name="LineageOS/android_packages_apps_Settings" />
+  <project name="android_packages_apps_Settings" path="packages/apps/Settings" remote="hatzen" revision="lineage-23.2" />
 
   <!-- 3. Offline SetupWizard (Bypasses WiFi/SIM setup pages) -->
   <remove-project name="LineageOS/android_packages_apps_SetupWizard" />

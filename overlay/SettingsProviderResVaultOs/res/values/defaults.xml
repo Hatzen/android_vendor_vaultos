@@ -12,5 +12,8 @@
 
     <!-- Concept 006: Enable native Android 16 One-Handed Mode by default -->
     <integer name="def_one_handed_mode_enabled">1</integer>
+
+    <!-- ADR 006: Internal GNSS is hardware-disabled with the modem (Location OFF) -->
+    <integer name="def_location_mode">0</integer>
 </resources>
 

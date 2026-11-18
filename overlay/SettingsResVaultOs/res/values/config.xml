@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: 2026 VaultOs
+    SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- ADR 006: Hide inapplicable location services & Wi-Fi/Bluetooth scanning menus -->
+    <bool name="config_show_location_services">false</bool>
+    <bool name="config_show_location_scanning">false</bool>
+</resources>
+

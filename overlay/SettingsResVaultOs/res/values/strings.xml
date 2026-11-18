@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: 2026 VaultOs
+    SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="location_settings_summary_location_off">Hardware disabled (Air-Gap — no internal GPS)</string>
+    <string name="location_settings_footer_location_off_no_telephony">Internal GPS/GNSS hardware is permanently disabled alongside the cellular modem in VaultOs (Air-Gap). Location services cannot be enabled.</string>
+    <string name="location_settings_footer_general">An external Bluetooth GNSS receiver via mock location is required if offline map positioning is ever needed.</string>
+</resources>
+
