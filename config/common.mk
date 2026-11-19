@@ -8,6 +8,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.vaultos.version=23.2-alpha \
     ro.vaultos.airgap=true \
     ro.vaultos.gps.hardware_disabled=true \
+    config.disable_telephony=true \
     ro.setupwizard.ignore_sim_locale=true
 
 # Default Bootanimation is set in device/shift/otter/BoardConfig.mk via TARGET_BOOTANIMATION
